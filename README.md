@@ -10,3 +10,7 @@ This folder contains some of my projects:
 Simple web page which I have been made by myself for my parents' CPA office.
 The web has been built using HTML, CSS, Javascript and Jquery.
 
+* Dogs app- (apk provided at Projects)
+Andoid app intented to connect between people who lost a dog and people who found one.
+The app includes connection to Firebase and Google Api's.
+
