@@ -1,0 +1,387 @@
+<!DOCTYPE html5>
+<html>
+<style>
+    body{
+        position: relative;
+        background-color: white;
+        height: auto;
+      
+    }
+   
+    header{
+        position: relative;
+        top: 0px;
+        left: 0%;
+        right: 0%;
+        background: rgba(240, 228, 120, 0.986);
+        height: 300px;
+        text-align: center;
+    }
+    #img-bullet{
+        position:absolute;
+        right: 50px;
+        bottom: -5px;
+        z-index: 3;
+    }
+    #img-bullet :hover{
+        transform: scale(1.1);
+    }
+
+    #img-zb{
+        position: relative;
+        top: 50px;
+        width: 180px;
+        height: 180px;
+        border-radius: 15%; 
+    }
+    #img-cap{
+        width: 200px;
+        position: relative;
+        top: 30px;
+        font-size: 32px;
+    }
+
+    h1{
+        color: black;
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-size: 48px;
+        width: auto;
+        position: absolute;
+        top: 5px;
+        left: 40%;
+    }
+       
+    li{
+        float: right;
+    }
+    nav{
+        background: rgba(240, 228, 120, 0.986);
+        border-radius: 0%;
+        padding: 1px;
+        text-align: center;
+        height: 60px;
+        position: relative;
+    }
+    nav ul{
+        list-style-type: none;
+        overflow: hidden;
+        position: relative;
+        right: 30%;
+    
+    }
+    li a {
+        display: block;
+        color: black;
+        font-size: 24px;
+        text-align: center;
+        padding: 5px 5px;
+        text-decoration: none;
+        position: relative;
+        margin-right: 100px;
+    }
+    
+    li a:hover {
+        background-color: rgba(255, 251, 0, 0.445);
+        color: black;
+        transform: scale(1.1);
+    }
+   
+    h2{
+        color: black;
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-size: 22px;
+        font-weight: bolder;
+    }  
+   
+    #abou-p{
+        color: black;
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+        font-weight:bold;
+        text-align: center;
+        
+    } 
+    #home-item{
+        background-color: rgba(238, 226, 132, 0.986);
+        height: 500px;
+        position: relative;
+        border-radius: 0%; 
+        top: 0px;
+        text-align: right;
+        border-top: 3px solid white; 
+        
+    }
+    #home-title{
+        position: relative;
+        right: 50px;
+        text-align: right;
+        color: black;
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+    }  
+    #flex-cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    h3{
+        color: black;
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-size: 22px;
+        font-weight: bolder;
+    }  
+
+    #mas{
+        position: relative;
+    }
+    #mas:hover{
+        transform: scale(1.1);
+    }
+    #img-mas{
+        width: 200px;
+        height: 200px;
+    }
+    #cap-mas{
+        text-align: center;
+    }
+    #hesh{
+        position: relative;
+    }
+    #hesh:hover{
+        transform: scale(1.1);
+    }
+    #cap-hesh{
+        text-align: center;
+    }
+    #img-hesh{
+        width: 200px;
+        height: 200px;
+    }
+    #doh{
+         position: relative;
+    }
+    #doh:hover{
+        transform: scale(1.1);
+    }
+    #img-doh{
+        width: 200px;
+        height: 200px;
+    }
+    #cap-doh{
+        text-align: center;
+    }
+    #about-item{
+        background-color: rgba(238, 227, 147, 0.986);
+       /* grid-area: content;*/
+        height: 500px;
+        position: relative;
+        border-radius: 0%; 
+        top: 0px;
+        text-align: right;
+        border-top: 3px solid white; 
+    }
+    #about-title{
+        position: relative;
+        right: 50px;
+        text-align: right;
+        color: black;
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    #about-p{
+        position: absolute;
+        right: 50px;
+        width: 600px;
+        text-align: right;
+        color: black;
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    #img-alliott{
+        position: absolute;
+        left: 30px;
+        top: 20px;
+        height: 450px;
+        width: 350px;
+        border-radius: 10%; 
+
+    }
+    #contact-item{
+        background-color: rgba(238, 229, 158, 0.87);
+       /* grid-area: content;*/
+        height: 400px;
+        position: relative;
+        border-radius: 0%; 
+        top: 0px;
+        text-align: right;
+        border-top: 3px solid white; 
+    }
+    #contact-title{
+        position: relative;
+        right: 50px;
+        text-align: right;
+        color: black;
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    #contact-form{
+        position: relative;
+        text-align: right;
+        color: black;
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+    }
+    label{
+        position: absolute;
+        right: 30px;
+    }
+    input{
+        position: absolute;
+        right: 100px;
+    }
+    #submit{
+        background-color: coral;
+        color: black;
+        height: 30px;
+        width: 50px;
+        border: 3px solid black;
+        border-radius: 10%;
+    }
+    #team{
+        position: relative;
+        top: 5px;
+        background-color: rgba(240, 231, 166, 0.76);
+        height: 350px;
+    }
+    #img-bullet-yosi{
+        position: absolute;
+        top:50px;
+        right: 27%;
+    }
+    #img-bullet-yosi :hover{
+        transform: scale(1.1);
+    }
+    #img-bullet-limor{
+        position: absolute;
+        top: 50px;
+        left: 27%;
+    }
+    #img-bullet-limor :hover{
+        transform: scale(1.1);
+    }
+    #img-yosi{
+        height: 200px;
+        width: 200px;
+        border-radius: 15%;
+    }
+    #img-limor{
+        height: 200px;
+        width: 200px;
+        border-radius: 15%;
+    }
+    #img-cap-yosi{
+        text-align: center;
+    }
+    #img-cap-limor{
+        text-align: center;
+    }
+    footer{
+        position: relative;
+        top: 0px;
+        border-top: 3px solid white; 
+        background-color:rgba(41, 41, 245, 0.568);
+        height: 250px;
+        text-align: right;
+        color: white
+       
+    }
+    #footer-det{
+        position: relative;
+        right: 20px;
+        font-family: Calibri,'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: right;
+    }
+</style>
+<head>
+
+</head>
+<body class="body-container">
+    
+    <section >
+        <header class="header-item">
+                <h1 class="sen-itme">תמיד כאן למענכם</h1>
+                <div id="img-bullet">
+                    <img id="img-zb" src="images/לוגו משרד.jpg" alt="z&b">
+                    <h2 id="img-cap">משרד רו"ח<br> צאיג בן משה</h2>
+                </div>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#home-item">בית</a></li>
+                    <li><a href="#about-item">אודות</a></li>
+                    <li><a href="#contact-item">צור קשר</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="home-item">
+            <h2 id="home-title">שירותים</h2>
+            <div id="flex-cont">
+            <div id="mas">
+                <img id="img-mas" src="images/רעיון.png" alt="יעוץ מס פנסיוני">
+                <h3 id="cap-mas">יעוץ מס פנסיוני</h3>
+            </div>
+            <div id="hesh">
+                <img id="img-hesh" src="images/מגדלת.png" alt="הנהלת חשבונות">
+                <h3 id="cap-hesh">הנהלת חשבונות</h3>
+            </div>
+            <div id="doh">
+                <img id="img-doh" src="images/report.png" alt="קריאת דוחות">
+                <h3 id="cap-doh">קריאת דו"חות</h3>
+            </div>
+            </div>
+        </section>
+        <section id="about-item">
+            <h2 id="about-title">אודותינו</h2>
+            <p id="about-p">	משרד רואי החשבון צאיג - בן משה פועל החל משנת 1992.<br> משרדי השותפות נמצאים  ברחוב בבני ברק ברחוב ששת הימים 28. המשרד נותן שרותים למאות לקוחות ממגזרי המשק השונים לרבות חברות ציבוריות, קופות תגמולים בנקים ופרטיות כאשר עיקר העיסוק הינו בביקורת חיצונית ופנימית.
+                המשרד חבר ברשת רו"ח בין לאומית, אליוט גרופ, רשת של רו"ח עצמאים בכל העולם. במסגרת הרשת הישראלית, אליוט ישראל, אנו מחזיקים מחלקת מיסים מחלקת ביטוח לאומי ומחלקת חשבונאות, כולן ברמה גבוהה ביותר. לקוחות המשרד נהנים מרמה מקצועית גבוהה ומגישה לטובי המומחים בכל התחומים.
+                </p>
+            <img src="images/אליוט.jpg" id="img-alliott" alt="אליוט גרופ">
+        </section>
+        <section id="contact-item">
+                <h2 id="contact-title">פנו אלינו</h2>
+                <form id="contact-form">
+                <input id="name" name="contact" type="text">
+                <label id="name-label" for="name">שם מלא</label><br>
+                <input id="email" name="contact" type="email">
+                <label id="email-label" for="email">מייל</label><br>
+                <input id="number" name="contact" type="number">
+                <label id="num-label" for="number">מספר</label><br>
+                <input id="text" name="contact" type="text">
+                <label id="text-label" for="text">תוכן</label><br>
+                <input id="submit" type="submit" value="שלח">
+                </form>
+        </section>
+    <section id="team">
+            <div id="img-bullet-yosi">
+                    <img id="img-yosi" src="images/61320_278180555672012_805611330_n.jpg" alt="רואה חשבון">
+                    <h2 id="img-cap-yosi">רואה חשבון<br> מר יוסי בן משה</h2>
+            </div>
+            <div id="img-bullet-limor">
+                <img id="img-limor" src="images/527163_522146251160424_1538541682_n.jpg" alt="מנהלת חשבונות">
+                <h2 id="img-cap-limor">מנהלת חשבונות<br> גב' לימור בן משה</h2>
+            </div>
+    </section>
+    <footer>
+    <section>
+        <p id="footer-det">כתובת...</p>
+    </section>
+    </footer>
+</body>
+</html>
